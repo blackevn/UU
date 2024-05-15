@@ -1,0 +1,25 @@
+'use client'
+
+interface AccordionProps {
+    title: string
+    desc: string
+    defaultChecked?: boolean
+}
+
+const Accordion: React.FC<AccordionProps> = ({title, desc, defaultChecked}) => {
+  return (
+    <div>
+        <div className="collapse bg-base-200">
+        <input type="radio" name="my-accordion-1" defaultChecked={defaultChecked} /> 
+        <div className="collapse-title text-xl font-medium">
+            {title}
+        </div>
+        <div className="collapse-content"> 
+            <p>{desc}</p>
+        </div>
+        </div>
+    </div>
+  )
+}
+
+export default Accordion

@@ -1,27 +1,25 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.icons{
+    @apply lg:w-72 lg:h-72 bg-no-repeat bg-contain absolute
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.navItem{
+    @apply w-full flex flex-col justify-between p-4 md:pt-8 h-full rounded-3xl relative cursor-pointer overflow-hidden 
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  
+  .animated-gradient {
+    background-image: linear-gradient(90deg, rgba(0,191,255,1) 0%, rgba(0,255,127,1) 25%, rgb(255, 187, 0) 30%, rgba(0,255,255,1) 50%, rgb(195, 0, 255) 65%, rgba(255,105,180,1) 75%, rgba(255,20,147,1) 100% );
+    animation: gradientShift 6s ease-in-out infinite;
+  }
+  
+  
