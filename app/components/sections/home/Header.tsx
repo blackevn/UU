@@ -64,7 +64,7 @@ const Header = () => {
     {/* First Box */}
 
   <div className='lg:h-full w-full p-4'>
-    <div className='h-[20%] lg:h-[40%]'>
+    <div className='lg:h-[40%]'>
     <h1 className='text-right text-[300%]'>Allow us to turn your business around.</h1>
     </div>
     <div className='lg:h-[60%] bg-gray-200 flex flex-col justify-between p-8 rounded-2xl'>
@@ -94,7 +94,7 @@ const Header = () => {
   {/* Third Box */}
 
   <div className='lg:h-full w-full p-4 relative '>
-    <h1 className='h-[20%] lg:h-[40%] text-[300%] text-left'>Allow us to turn your business around.</h1>
+    <h1 className='lg:h-[40%] text-[300%] text-left'>Allow us to turn your business around.</h1>
     <div className='lg:h-[60%] backdrop-blur-3xl rounded-2xl relative border-1 border-gray-200'>
       <div className='w-full grid place-items-center'>
         <Image src={'/Stars.png'} alt={'Star'} width={400} height={400}/>
