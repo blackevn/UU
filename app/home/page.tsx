@@ -6,7 +6,7 @@ import { Header, SecondSection} from '../components'
 
 const HomePage = () => {
   return (
-    <div className='h-screen relative dark:text-white text-black'> 
+    <div className='relative dark:text-white text-black'> 
 
     {/* Home screen menu */}
 

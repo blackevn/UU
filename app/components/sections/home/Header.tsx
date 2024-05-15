@@ -55,6 +55,9 @@ const Header = () => {
   return (
 
    <>
+   <div className='h-screen'>
+
+  
    <div className='h-[30%] grid place-items-center relative'>
     <AnimatedGradientLine/>
    </div>
@@ -108,6 +111,7 @@ const Header = () => {
         <h1 className='font-bold text-black text-xl px-4'>Reviews</h1>
       </div>
     </div>
+  </div>
   </div>
   </div>
    </>
