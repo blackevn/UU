@@ -58,11 +58,11 @@ const Header = () => {
    <div className='h-screen'>
 
   
-   <div className='h-[30%] grid place-items-center relative'>
+   <div className='lg:h-[30%] grid place-items-center relative'>
     <AnimatedGradientLine/>
    </div>
 
-    <div className='h-[70%] lg:grid grid-cols-3'>
+    <div className='lg:h-[70%] flex flex lg:grid grid-cols-3'>
 
     {/* First Box */}
 
