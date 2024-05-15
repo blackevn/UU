@@ -33,7 +33,7 @@ export default function RootLayout({
 
        <Navbar/>
        <AnimatePresence>
-       <motion.div className='h-screen overflow-scroll' initial={{opacity: 0, y: -100 }} animate={{opacity: 1, y: 0}} exit={{opacity: 0, y: -100}} transition={{ type: 'spring', stiffness: 150}}>
+       <motion.div className='' initial={{opacity: 0, y: -100 }} animate={{opacity: 1, y: 0}} exit={{opacity: 0, y: -100}} transition={{ type: 'spring', stiffness: 150}}>
         {children}
        </motion.div>
        </AnimatePresence>
