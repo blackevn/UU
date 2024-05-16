@@ -55,7 +55,7 @@ const Header = () => {
   return (
 
    <>
-   <div className='lg:min-h-screen'>
+   <div className='lg:h-screen'>
 
   
    <div className='lg:h-[30%] grid place-items-center relative min-h-[200px] '>
