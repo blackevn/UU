@@ -24,7 +24,7 @@ const HomePage = () => {
 
       <motion.div 
       draggable={true} 
-      className={`bg-[url('/Circle.svg')] icons absolute right-0 bottom-[-100px] `}></motion.div>
+      className={`bg-[url('/Circle.svg')] icons absolute right-0 bottom-[-100px]`}></motion.div>
       <motion.div
       draggable={true}
       className={`bg-[url('/Green.svg')] icons absolute top-64 left-[-100px]`}></motion.div>

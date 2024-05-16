@@ -19,7 +19,7 @@ const SecondSection = () => {
     ]
 
   return (
-    <div className='w-full p-8 flex bg-white dark:bg-black text-black dark:text-white'>
+    <div className='w-full p-8 flex bg-white dark:bg-black text-black dark:text-white min-h-[400px]'>
         <div className='lg:w-1/2'>
             <div>
                 <h1 className='text-4xl font-bold'>Transform Your Business with Our Expertise</h1>

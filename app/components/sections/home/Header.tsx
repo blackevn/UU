@@ -58,11 +58,11 @@ const Header = () => {
    <div className='h-screen'>
 
   
-   <div className='lg:h-[30%] grid place-items-center relative'>
+   <div className='h-[15%] lg:h-[30%] grid place-items-center relative'>
     <AnimatedGradientLine/>
    </div>
 
-    <div className='lg:h-[70%] flex flex lg:grid grid-cols-3'>
+    <div className='h-[85%] lg:h-[70%] flex flex-col lg:grid grid-cols-3'>
 
     {/* First Box */}
 
@@ -82,7 +82,7 @@ const Header = () => {
 
   {/* Second Box */}
 
-  <div className='h-1/5 lg:h-full w-full p-4'>
+  <div className='lg:h-full w-full p-4'>
     <div className='h-full'>
     <NavbarItem    
                 
@@ -96,7 +96,7 @@ const Header = () => {
 
   {/* Third Box */}
 
-  <div className='lg:h-full w-full p-4 relative '>
+  <div className='h-full w-full p-4 relative'>
     <h1 className='lg:h-[40%] text-[300%] text-left'>Allow us to turn your business around.</h1>
     <div className='lg:h-[60%] backdrop-blur-3xl rounded-2xl relative border-1 border-gray-200'>
       <div className='w-full grid place-items-center'>

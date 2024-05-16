@@ -16,7 +16,7 @@ const Navbar = () => {
     console.log(menuToggle);
     
 
-  return <> <div className='fixed z-[999] w-screen'>
+  return <> <div className='fixed z-[999] w-screen bg-black'>
             <div className='flex items-center justify-between p-4'>
                 <div>
                     <h1>Unicorn Universal</h1>
