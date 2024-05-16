@@ -20,9 +20,9 @@ const SecondSection = () => {
 
   return (
     <div className='w-full p-8 flex bg-white dark:bg-black text-black dark:text-white min-h-[400px]'>
-        <div className='lg:w-1/2'>
-            <div>
-                <h1 className='text-4xl font-bold'>Transform Your Business with Our Expertise</h1>
+        <div className='lg:w-1/2 space-y-4'>
+            <div className='space-y-2'>
+                <h1 className='text-2xl lg:text-4xl font-bold'>Transform Your Business with Our Expertise</h1>
                 <p>At Unicorn Universal, we specialize in elevating your brand's presence on social media. Our tailored strategies ensure your business stands out and reaches its target audience effectively.</p>
             </div>
             <div className='space-y-2'>
