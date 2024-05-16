@@ -55,7 +55,7 @@ const Header = () => {
   return (
 
    <>
-   <div className='h-screen'>
+   <div className=''>
 
   
    <div className='h-[15%] lg:h-[30%] grid place-items-center relative'>
