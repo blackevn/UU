@@ -25,9 +25,8 @@ const Menu = () => {
             animate={{opacity: 1, y: 0 }}
             exit={{opacity: 0, y: -500}}
             transition={{duration: 1, type: 'spring', stiffness: 100}}
-            className='fixed top-0 bottom-0 right-0 left-0 overflow-hidden w-screen z-[999] h-screen bg-white dark:bg-black dark:text-white text-black'>
+            className='fixed top-0 bottom-0 right-0 left-0 overflow-hidden w-screen z-[999] h-full bg-white dark:bg-black dark:text-white text-black'>
             <div className="p-4 flex flex-col justify-between h-full w-full relative">
-
 
             <AnimatePresence>
 
@@ -45,26 +44,29 @@ const Menu = () => {
             </AnimatePresence>
 
 
-            <div className="flex gap-8 items-center">
-            <Toggle 
-                    icon={FaAdjust} 
-                    toggleEvent={ toggleDarkMode } 
-                    on={FaSun} 
-                    off={FaMoon } 
-                    modifier={`${darkMode ? 'text-white' : ''}`} 
-                    modifier1={''} 
-                    modifier2={''} 
-                    checked={darkMode} 
-                    placeholder={''}/>
-            <Button
-            icon={GrClose}
-            text=""
-            iconModifier={`text-2xl`}   
-            clickEvent={handleToggle}
-            modifier=" absolute right-0 mx-4"
-            />
+            <div className="flex gap-8 items-center ">
+                <div className="flex">
+
+                    <Toggle 
+                            icon={FaAdjust} 
+                            toggleEvent={ toggleDarkMode } 
+                            on={FaSun} 
+                            off={FaMoon } 
+                            modifier={`${darkMode ? 'text-white' : ''}`} 
+                            modifier1={''} 
+                            modifier2={''} 
+                            checked={darkMode} 
+                            placeholder={''}/>
+                    <Button
+                    icon={GrClose}
+                    text=""
+                    iconModifier={`text-2xl`}   
+                    clickEvent={handleToggle}
+                    modifier=" absolute right-0 mx-4"
+                    />
+                </div>
             </div>   
-            <div className="h-[60%] md:h-[50%] xl:h-[50%] ">
+            <div className="h-[80%] md:h-[50%] xl:h-[50%] ">
             <div className="flex justify-between items-end lg:py-4">
                 <h1 className="text-4xl md:text-5xl xl:text-7xl font-black">Unicorn Universal</h1>
                 <div className="text-sm">
@@ -120,7 +122,7 @@ const Menu = () => {
             
             :
             
-            <div className="space-y-4 h-full py-4">
+            <div className="s`pace-y-4 h-full py-4`">
                   <div className="grid grid-cols-2 gap-4 h-[70%]">
                         {mobileArr.map(item => (<NavbarItem 
                         clicked={() => handleToggle()}

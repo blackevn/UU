@@ -14,7 +14,7 @@ const Accordion: React.FC<AccordionProps> = ({title, desc, defaultChecked}) => {
         <div className="collapse-title text-xl font-medium">
             {title}
         </div>
-        <div className="collapse-content bg-gray-400 rounded-lg p-4"> 
+        <div className="collapse-content"> 
             <p>{desc}</p>
         </div>
         </div>

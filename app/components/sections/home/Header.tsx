@@ -4,6 +4,8 @@ import React from 'react'
 import { AnimatedGradientLine, AvatarGroup, NavbarItem } from "../../"
 import Image from 'next/image'
 import { FaStar } from 'react-icons/fa'
+import { AnimatePresence, motion } from 'framer-motion'
+
 
 const Header = () => {
 
@@ -58,7 +60,7 @@ const Header = () => {
    <div className='lg:h-screen'>
 
   
-   <div className='lg:h-[30%] grid place-items-center relative min-h-[200px] '>
+   <div className='lg:h-[30%] mt-16 lg:mt-0 grid place-items-center relative h-[200px] lg:pt-0'>
     <AnimatedGradientLine/>
    </div>
 
@@ -68,7 +70,7 @@ const Header = () => {
 
   <div className='lg:h-full w-full p-4'>
     <div className='lg:h-[40%]'>
-    <h1 className='text-right text-[300%]'>Allow us to turn your business around.</h1>
+    <h1 className='text-center lg:text-right text-[300%]'>Allow us to turn your business around.</h1>
     </div>
     <div className='lg:h-[60%] bg-gray-200 flex flex-col justify-between p-8 rounded-2xl'>
       <h1 className='text-[400%] font-thin max-w-[30%]'>
@@ -82,7 +84,7 @@ const Header = () => {
 
   {/* Second Box */}
 
-  <div className='lg:h-full w-full p-4'>
+  <div className='lg:h-full w-full p-4 h-[300px]'>
     <div className='h-full'>
     <NavbarItem    
                 
@@ -97,7 +99,7 @@ const Header = () => {
   {/* Third Box */}
 
   <div className='h-full w-full p-4 relative'>
-    <h1 className='lg:h-[40%] text-[300%] text-left'>Allow us to turn your business around.</h1>
+    <h1 className='lg:h-[40%] text-[300%] text-center lg:text-left'>Allow us to turn your business around.</h1>
     <div className='lg:h-[60%] backdrop-blur-3xl rounded-2xl relative border-1 border-gray-200'>
       <div className='w-full grid place-items-center'>
         <Image src={'/Stars.png'} alt={'Star'} width={400} height={400}/>
@@ -113,7 +115,25 @@ const Header = () => {
     </div>
   </div>
   </div>
+
+          {/* <AnimatePresence>
+
+            <motion.div 
+            draggable={true} 
+            className={`bg-[url('/Circle.svg')] icons absolute right-0 bottom-[-100px]`}></motion.div>
+            <motion.div
+            draggable={true}
+            className={`bg-[url('/Green.svg')] icons absolute top-64 left-[-100px]`}></motion.div>
+            <motion.div
+            draggable
+            className=" absolute icons bg-[url('/BlueRed.svg')] right-36 top-28">
+            </motion.div>
+
+        </AnimatePresence> */}
+
   </div>
+
+
    </>
   )
 }
