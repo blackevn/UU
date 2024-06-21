@@ -46,7 +46,7 @@ const NavItem: React.FC<NavigationLinks> = ({ link, name, clicked, modifier, pat
           <div id="divCircleColor" className={`${circleColorModifier} absolute bottom-[-100px] left-[-100px] w-[70%] h-[70%] rounded-full opacity-0 blur-3xl`}></div>
             <motion.img initial={{opacity: 0.4}} id="iconImage" className="w-[50%] absolute left-[25%] md:top-[50%] lg:top-[35%] xl:top-[25%]"  src={image} alt="" />
                <div className={`flex ${ width <= 900 ? 'justify-center' : "justify-between"} w-full ${ name === 'Pricing' && width <= 1260  ? 'items-start' : 'items-center'  } `}>
-                 <h1  id="title" className={`opacity-0 font-thin text-sm md:text-lg lg:text-2xl ${ width <= 900 && 'hidden'} z-40 `}>
+                 <h1  id="title" className={`opacity-0 font-thin text-sm md:text-lg lg:text-2xl ${ width <= 900 && 'hidden'} z-40 pl-2`}>
                  {name && `Go to ${name} page`}
                  </h1>
                  <div className={`${width <= 900 ? 'absolute bottom-[40%]' : ''} ${name === "Pricing" ? 'bottom-[25%]' : ''}` }>

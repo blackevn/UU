@@ -66,7 +66,7 @@ const Menu = () => {
                     />
                 </div>
             </div>   
-            <div className="h-[80%] md:h-[50%] xl:h-[50%] ">
+            <div className="h-[80%] md:h-[50%] xl:h-[50%]  lg:mb-4">
             <div className="flex justify-between items-end lg:py-4">
                 <h1 className="text-4xl md:text-5xl xl:text-7xl font-black">Unicorn Universal</h1>
                 <div className="text-sm">
@@ -122,8 +122,8 @@ const Menu = () => {
             
             :
             
-            <div className="s`pace-y-4 h-full py-4`">
-                  <div className="grid grid-cols-2 gap-4 h-[70%]">
+            <div className=" h-full ">
+                  <div className="grid grid-cols-2 gap-4 h-[65%]">
                         {mobileArr.map(item => (<NavbarItem 
                         clicked={() => handleToggle()}
                         link={item.url} 
@@ -136,7 +136,7 @@ const Menu = () => {
                         `}
                         />))}
                   </div>
-                  <div className="w-full h-[20%]">
+                  <div className="w-full h-[20%] mt-4">
                         {mobilePricing.map(item => (<NavbarItem 
                         clicked={() => handleToggle()}
                         link={item.url} 
